@@ -84,17 +84,17 @@ fun getBlocGenerators(name: String): List<PresentationLayerGenerator> {
 
 ## ## Build Config
 
-![image-20220906195554597](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906195554597.png)
+![스크린샷 2022-09-06 오후 7 55 36](https://user-images.githubusercontent.com/49789441/188619946-61b14ec5-ead4-4621-b119-a4e81c10764a.png)
 
-![image-20220906195633086](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906195633086.png)
+![스크린샷 2022-09-06 오후 7 56 27](https://user-images.githubusercontent.com/49789441/188620141-47269a99-2c4d-4c27-9e8a-0c42c522a6c6.png)
 
 1. Run
 
-   ![image-20220906195703980](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906195703980.png)
+   ![스크린샷 2022-09-06 오후 7 56 49](https://user-images.githubusercontent.com/49789441/188620301-8cb1c301-2528-4c8d-88bf-c03739efa2fc.png)
 
 2. Archive
 
-   ![image-20220906195746840](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906195746840.png)
+   ![스크린샷 2022-09-06 오후 7 57 33](https://user-images.githubusercontent.com/49789441/188620463-21992183-8d37-44fd-9903-7622cad7d950.png)
 
 
 
@@ -102,22 +102,22 @@ fun getBlocGenerators(name: String): List<PresentationLayerGenerator> {
 
 Android Studio - Preferences - Plugin
 
-![image-20220906200023006](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906200023006.png)
+![스크린샷 2022-09-06 오후 8 00 19](https://user-images.githubusercontent.com/49789441/188620601-73627d44-bc5f-483a-95f0-10c10d2fce3f.png)
 
 
 
 Plugin - build - distributions - zip file
 
-![image-20220906200108022](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906200108022.png)
+![스크린샷 2022-09-06 오후 8 00 58](https://user-images.githubusercontent.com/49789441/188620731-9945c6bd-559a-452c-b3c5-9cdb81471cdc.png)
 
 
 
 Restart IDE
 
-![image-20220906200230541](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906200230541.png)
+![스크린샷 2022-09-06 오후 8 02 14](https://user-images.githubusercontent.com/49789441/188620832-7b747b70-a8c0-4411-8cf2-4f103d962678.png)
 
 
 
 New - TestAction 실행
 
-![image-20220906200307785](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906200307785.png)
+![스크린샷 2022-09-06 오후 8 03 00](https://user-images.githubusercontent.com/49789441/188620957-b0f17b83-4731-45db-85a3-7f1c7eedf025.png)
