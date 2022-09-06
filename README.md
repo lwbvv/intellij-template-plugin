@@ -1,7 +1,10 @@
+
+
 # Intellij Code Template
 
 ## Structure
 
+```
 src
 └── main
     ├── kotlin
@@ -36,6 +39,9 @@ src
                 ├── model_mapper.dart.template
                 ├── widget.dart.template
                 └── widget_model.dart.template
+```
+
+
 
 ## How to use
 
@@ -73,3 +79,45 @@ fun getBlocGenerators(name: String): List<PresentationLayerGenerator> {
 ```
 
 5. PresentationLayerGeneratorFactory의 팩토리 메서드에 맞춰 onGenerateClicked 메서드 generate 메서드 수정
+
+
+
+## ## Build Config
+
+![image-20220906195554597](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906195554597.png)
+
+![image-20220906195633086](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906195633086.png)
+
+1. Run
+
+   ![image-20220906195703980](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906195703980.png)
+
+2. Archive
+
+   ![image-20220906195746840](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906195746840.png)
+
+
+
+## Apply
+
+Android Studio - Preferences - Plugin
+
+![image-20220906200023006](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906200023006.png)
+
+
+
+Plugin - build - distributions - zip file
+
+![image-20220906200108022](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906200108022.png)
+
+
+
+Restart IDE
+
+![image-20220906200230541](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906200230541.png)
+
+
+
+New - TestAction 실행
+
+![image-20220906200307785](/Users/canlablee/Library/Application Support/typora-user-images/image-20220906200307785.png)
