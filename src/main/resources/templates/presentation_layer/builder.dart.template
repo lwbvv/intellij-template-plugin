@@ -1,0 +1,22 @@
+
+import 'bloc/${snake_case}_bloc.dart';
+import '${snake_case}_widget.dart';
+import '${snake_case}_model_mapper.dart';
+
+// 해당 모듈을 만드는 데 필요한 데이터 Dependency
+class ${pascal_case}Dependency {
+  ${pascal_case}Dependency();
+}
+
+class ${pascal_case}Builder {
+  final ${pascal_case}Dependency _dependency;
+
+  ${pascal_case}Builder(this._dependency);
+
+  ${pascal_case}Widget build() {
+    return ${pascal_case}Widget(
+      bloc: ${pascal_case}Bloc(),
+      mapper: ${pascal_case}ModelMapper(),
+    );
+  }
+}

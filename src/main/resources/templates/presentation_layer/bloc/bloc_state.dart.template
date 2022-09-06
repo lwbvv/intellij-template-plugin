@@ -1,0 +1,33 @@
+part of '${snake_case}_bloc.dart';
+
+abstract class ${pascal_case}State {
+  ${pascal_case}State();
+}
+
+class ${pascal_case}Loading implements ${pascal_case}State {
+  ${pascal_case}Loading();
+
+  @override
+  List<Object?> get props => [];
+}
+
+class ${pascal_case}Empty implements ${pascal_case}State {
+  ${pascal_case}Loading();
+
+  @override
+  List<Object?> get props => [];
+}
+
+class ${pascal_case}Error implements ${pascal_case}State {
+  ${pascal_case}Loading();
+
+  @override
+  List<Object?> get props => [];
+}
+
+class ${pascal_case}Loaded implements ${pascal_case}State {
+  ${pascal_case}Loading();
+
+  @override
+  List<Object?> get props => [];
+}

@@ -1,0 +1,10 @@
+part of '${snake_case}_bloc.dart';
+
+abstract class ${pascal_case}Event {}
+
+class Load${pascal_case} implements ${pascal_case}Event {
+  Load${pascal_case}();
+
+  @override
+  List<Object?> get props => [];
+}

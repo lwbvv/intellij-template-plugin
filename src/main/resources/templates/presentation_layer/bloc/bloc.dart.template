@@ -1,0 +1,19 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+part '${snake_case}_event.dart';
+part '${snake_case}_state.dart';
+
+class ${pascal_case}Bloc extends Bloc<${pascal_case}Event, ${pascal_case}State> {
+
+  ${pascal_case}Bloc() : super(Loading()) {
+    on<Load${pascal_case}>(_load${pascal_case});
+  }
+}
+
+extension LoadEvent on ${pascal_case}Bloc {
+  _load${pascal_case}(Load${pascal_case} event, Emitter<${pascal_case}State> emit) async {
+
+    // 비지니스 로직 처리 후 결과값 전달
+    emit(Loaded());
+  }
+}

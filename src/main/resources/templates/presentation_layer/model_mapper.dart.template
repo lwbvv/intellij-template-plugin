@@ -1,0 +1,5 @@
+class ${pascal_case}ModelMapper {
+  ${pascal_case}Model to${pascal_case}Model(${pascal_case}State from) {
+    // convert state to model
+  }
+}

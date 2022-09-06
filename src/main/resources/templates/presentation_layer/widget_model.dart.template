@@ -1,0 +1,3 @@
+class ${pascal_case}WidgetModel {
+  ${pascal_case}WidgetModel();
+}

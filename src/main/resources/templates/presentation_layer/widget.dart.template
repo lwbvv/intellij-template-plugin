@@ -1,0 +1,93 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '${snake_case}_model.dart';
+import 'bloc/${snake_case}_bloc.dart';
+import 'bloc/${snake_case}_event.dart';
+import 'bloc/${snake_case}_state.dart';
+import '${snake_case}_model_mapper.dart';
+
+class ${pascal_case}Widget extends StatelessWidget {
+  final ${pascal_case}Bloc _bloc;
+  final ${pascal_case}ModelMapper _mapper;
+
+  ${pascal_case}Widget({required ${pascal_case}Bloc bloc, required ${pascal_case}ModelMapper mapper})
+      : _bloc = bloc,
+        _mapper = mapper {
+    _bloc.add(Load${pascal_case}());
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocBuilder<${pascal_case}Bloc, ${pascal_case}State>(
+        bloc: _bloc,
+        builder: (context, state) {
+          final ${pascal_case}Model viewModel = _mapper.to${pascal_case}Model(state);
+          List<ListItem> items = [];
+          Widget Function()? emptyBuilder;
+          Widget Function(ListItem item, double width)? buildItemUpper;
+          Function()? onTapMore;
+
+          if (state is Empty) {
+            return _EmptyWidget();
+          }
+
+          if (state is Error) {
+            return _ErrorWidget();
+          }
+
+          if (state is Loading) {
+            return _LoadingWidget();
+          }
+
+          if (state is Loaded) {
+            return _LoadingWidget();
+          }
+
+          return Container();
+  }
+}
+
+class _EmptyWidget extends StatelessWidget {
+  final ${pascal_case}Empty _state;
+
+  _EmptyWidget(${pascal_case}Empty state): _state = state;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text("Empty");
+  }
+}
+
+class _ErrorWidget extends StatelessWidget {
+  final ${pascal_case}Error _state;
+
+  _ErrorWidget(${pascal_case}Error state): _state = state;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text("Error");
+  }
+}
+
+class _LoadingWidget extends StatelessWidget {
+  final ${pascal_case}Loading _state;
+
+  _LoadingWidget(${pascal_case}Loading state): _state = state;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text("Loading");
+  }
+}
+
+class _LoadedWidget extends StatelessWidget {
+  final ${pascal_case}Loaded _state;
+
+  _LoadedWidget(${pascal_case}Loaded state): _state = state;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text("LoadedWidget");
+  }
+}
